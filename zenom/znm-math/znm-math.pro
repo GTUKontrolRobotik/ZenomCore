@@ -8,7 +8,7 @@
 #
 #--------------------------------------------------------------
 
-include( ../../zenom.pri )
+include( ../../zenomcore.pri )
 
 VERSION = 1.0.0
 
@@ -20,34 +20,34 @@ TEMPLATE = lib
 DEFINES += ZNMMATH_LIBRARY
 
 SOURCES += \
-    Transform.cpp
+	Transform.cpp
 
 HEADERS += \
-    VectorBase.hpp \
-    Vector.hpp \
-    Transform.hpp \
-    RowVector.hpp \
-    ODESolverRK4.hpp \
-    MatrixInitializer.hpp \
-    MatrixBase.hpp \
-    Matrix.hpp \
-    MathException.hpp \
-    LowpassFilter.hpp \
-    Integrator.hpp \
-    Differentiator4O.hpp \
-    Differentiator.hpp \
-    ColumnVector.hpp \
-    Adams3Integrator.hpp \
-    ButterworthFilter.hpp \
-    Euler2DigitalFilter.hpp
+	VectorBase.hpp \
+	Vector.hpp \
+	Transform.hpp \
+	RowVector.hpp \
+	ODESolverRK4.hpp \
+	MatrixInitializer.hpp \
+	MatrixBase.hpp \
+	Matrix.hpp \
+	MathException.hpp \
+	LowpassFilter.hpp \
+	Integrator.hpp \
+	Differentiator4O.hpp \
+	Differentiator.hpp \
+	ColumnVector.hpp \
+	Adams3Integrator.hpp \
+	ButterworthFilter.hpp \
+	Euler2DigitalFilter.hpp
 
 # build directory
 DESTDIR = ../../lib
 
 # install
-target.path = $${ZENOM_INSTALL_LIBS}
+target.path = $${ZENOM_CORE_INSTALL_LIBS}
 INSTALLS += target
 
 headers.files  = $${HEADERS}
-headers.path   = $${ZENOM_INSTALL_HEADERS}
+headers.path   = $${ZENOM_CORE_INSTALL_HEADERS}
 INSTALLS += headers

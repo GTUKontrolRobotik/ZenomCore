@@ -8,7 +8,7 @@
 #
 #--------------------------------------------------------------
 
-include( ../../zenom.pri )
+include( ../../zenomcore.pri )
 
 VERSION = 1.0.0
 
@@ -21,12 +21,12 @@ TEMPLATE = lib
 DEFINES += ZNMCONTROLBASE_LIBRARY
 
 SOURCES += controlbase.cpp \
-    lifecycletask.cpp \
-    looptask.cpp
+	lifecycletask.cpp \
+	looptask.cpp
 
 HEADERS += controlbase.h\
-    lifecycletask.h \
-    looptask.h
+	lifecycletask.h \
+	looptask.h
 
 # Zenom Core Library
 INCLUDEPATH += ../znm-core
@@ -42,10 +42,10 @@ LIBS += -L../../lib -lznm-tools
 DESTDIR = ../../lib
 
 # install
-target.path = $${ZENOM_INSTALL_LIBS}
+target.path = $${ZENOM_CORE_INSTALL_LIBS}
 INSTALLS += target
 
 headers.files  = $${HEADERS}
-headers.path   = $${ZENOM_INSTALL_HEADERS}
+headers.path   = $${ZENOM_CORE_INSTALL_HEADERS}
 INSTALLS += headers
 
