@@ -7,7 +7,9 @@ int main(int argc, char *argv[])
     a.setOrganizationName( "RobotLab" );
     a.setApplicationName( "ZenomCore" );
 
-    ZenomCore z(&a, argc, argv);
+    QStringList args = a.arguments();
+
+    ZenomCore z(&a, args);
 
     return a.exec();
 }

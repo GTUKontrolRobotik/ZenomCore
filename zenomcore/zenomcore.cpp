@@ -1,14 +1,15 @@
 #include "zenomcore.h"
 
-ZenomCore::ZenomCore(QObject *parent, int argc, char *argv[]) : QObject(parent)
+ZenomCore::ZenomCore(QObject *parent, QStringList args) : QObject(parent)
 {
-    std::cout << argc << " " << std::endl;
-    for (int i=0; i<argc; i++) {
-        std::cout << argv[i] << std::endl;
+    for (int i=0; i<args.length(); i++) {
+        if ( args[i].contains( ".znm" ) )
+        {
+            std::cout << args[i].toStdString() << std::endl;
+        }
     }
 
     /* TODO List -----------------------------
-     *  0. Qt argument parser
      *  1. Open a project, read cnt,log variables
      *  2. Open shared memory
      *  3. mDataRepository
@@ -20,6 +21,11 @@ ZenomCore::ZenomCore(QObject *parent, int argc, char *argv[]) : QObject(parent)
      *  9. mControlBaseProcess SIGNAL( error )
      * 10. mControlBaseProcess SIGNAL( readyReadStandardOutput )
      * 11. mControlBaseProcess SIGNAL( readyReadStandardError )
+     *
+     * -------------------------------------*/
+
+    /* DONE List -----------------------------
+     *  0. Qt argument parser Introduced @Qt5.2, we use old qt so use dummy method
      *
      * -------------------------------------*/
 }

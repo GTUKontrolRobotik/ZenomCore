@@ -2,13 +2,15 @@
 #define ZENOMCORE_H
 
 #include <QObject>
+#include <QStringList>
+#include <QDebug>
 #include <iostream>
 
 class ZenomCore : public QObject
 {
     Q_OBJECT
 public:
-    explicit ZenomCore(QObject *parent = nullptr, int argc = 0, char *argv[] = nullptr);
+    explicit ZenomCore(QObject *parent = nullptr, QStringList args = QStringList() );
 
 signals:
 
