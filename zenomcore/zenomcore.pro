@@ -16,7 +16,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
 		main.cpp \
-		zenomcore.cpp
+		zenomcore.cpp \
+		messagelistenertask.cpp \
+		utility/matlabstream.cpp \
+		utility/logvariableitem.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -24,4 +27,24 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-	zenomcore.h
+	zenomcore.h \
+	messagelistenertask.h \
+	utility/matlabstream.h \
+	utility/logvariableitem.h
+
+# Zenom Core Library
+INCLUDEPATH += ../zenom/znm-core
+DEPENDPATH += ../zenom/znm-core
+LIBS += -L../lib -lznm-core -lboost_system
+
+# Zenom Tools Library
+INCLUDEPATH += ../zenom/znm-tools
+DEPENDPATH += ../zenom/znm-tools
+LIBS += -L../lib -lznm-tools
+
+# build directory
+DESTDIR = ../bin
+
+# install
+target.path = $${ZENOM_INSTALL_BINS}
+INSTALLS += target
