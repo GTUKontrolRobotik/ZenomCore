@@ -43,6 +43,10 @@ As you can see, the result is same for both `Zenom` and `ZenomCore` as expected.
 
 ![Zenom Plotting][zenom]
 
+Made in [RobotLab][robotlab] @ [Gebze Technical University][gtu]
+
 [octave]: https://github.com/GTUKontrolRobotik/ZenomCore/blob/master/doc/octave.png
 [cmd]: https://github.com/GTUKontrolRobotik/ZenomCore/blob/master/doc/cmd.png
 [zenom]: https://github.com/GTUKontrolRobotik/ZenomCore/blob/master/doc/zenom.png
+[gtu]: https://www.gtu.edu.tr/
+[robotlab]: https://bilmuh.gtu.edu.tr/robotlab/contact.html
