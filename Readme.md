@@ -39,5 +39,10 @@ grid minor;
 
 ![Octave Plotting][octave]
 
+As you can see, the result is same for both `Zenom` and `ZenomCore` as expected.
+
+![Zenom Plotting][zenom]
+
 [octave]: https://github.com/GTUKontrolRobotik/ZenomCore/blob/master/doc/octave.png
 [cmd]: https://github.com/GTUKontrolRobotik/ZenomCore/blob/master/doc/cmd.png
+[zenom]: https://github.com/GTUKontrolRobotik/ZenomCore/blob/master/doc/zenom.png
