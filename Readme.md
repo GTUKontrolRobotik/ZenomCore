@@ -17,6 +17,8 @@ at the command line. It is stripped down version of [Zenom](https://github.com/G
   * `ZenomCore` automatically will run your realtime task, and save the log variables to `test.m` on your project folder.
   * You can now open `Matlab` or `Octave` to see the results
 
+![Commandline Output of ZenomCore][cmd]
+
 ## Visulize the Log Variables
 
 `ZenomCore` will save the log variables to your project folder after execution is done.
@@ -38,3 +40,4 @@ grid minor;
 ![Octave Plotting][octave]
 
 [octave]: https://github.com/GTUKontrolRobotik/ZenomCore/blob/master/doc/octave.png
+[cmd]: https://github.com/GTUKontrolRobotik/ZenomCore/blob/master/doc/cmd.png
