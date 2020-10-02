@@ -55,6 +55,19 @@ Here is the list of needed shared libraries:
 Using `QtCreator` you can add new Qt Kits. Create a Qt Kit for your platform and
 recompile the project with it.
 
+## Credits
+
+* First version of `Zenom` with `Xenomai` is created by:
+  * Cüneyt Ay
+  * Hüsnü Karaküçük
+
+* Modifications done by:
+  * [Ahmet Soyyiğit][ahmet]
+  * [Mesih Veysi Kılınç][mesih]
+
+* `ZenomCore` is derived from `Zenom` by:
+  * [Mesih Veysi Kılınç][mesih]
+
 Made in [RobotLab][robotlab] @ [Gebze Technical University][gtu]
 
 [octave]: https://github.com/GTUKontrolRobotik/ZenomCore/blob/master/doc/octave.png
@@ -63,3 +76,5 @@ Made in [RobotLab][robotlab] @ [Gebze Technical University][gtu]
 [shared]: https://github.com/GTUKontrolRobotik/ZenomCore/blob/master/doc/shared.png
 [gtu]: https://www.gtu.edu.tr/
 [robotlab]: https://bilmuh.gtu.edu.tr/robotlab/contact.html
+[mesih]: https://github.com/MesihK
+[ahmet]: https://github.com/ahmedius2
