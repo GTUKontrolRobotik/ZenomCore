@@ -43,10 +43,23 @@ As you can see, the result is same for both `Zenom` and `ZenomCore` as expected.
 
 ![Zenom Plotting][zenom]
 
+## Cross Compiling
+
+You can cross compile `ZenomCore` to any Qt4 supporting linux environment.
+Here is the list of needed shared libraries:
+
+![Shared Libraries][shared]
+
+`libznm-core` and `libznm-tools` are supplied within this project.
+
+Using `QtCreator` you can add new Qt Kits. Create a Qt Kit for your platform and
+recompile the project with it.
+
 Made in [RobotLab][robotlab] @ [Gebze Technical University][gtu]
 
 [octave]: https://github.com/GTUKontrolRobotik/ZenomCore/blob/master/doc/octave.png
 [cmd]: https://github.com/GTUKontrolRobotik/ZenomCore/blob/master/doc/cmd.png
 [zenom]: https://github.com/GTUKontrolRobotik/ZenomCore/blob/master/doc/zenom.png
+[shared]: https://github.com/GTUKontrolRobotik/ZenomCore/blob/master/doc/shared.png
 [gtu]: https://www.gtu.edu.tr/
 [robotlab]: https://bilmuh.gtu.edu.tr/robotlab/contact.html
